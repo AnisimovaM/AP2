@@ -1,6 +1,7 @@
 import csv
 import time
 import os
+from myiterator import Iterator
 import datetime
 
 
@@ -126,3 +127,8 @@ print("="*5)
 print("week -> ", find_data_weeks("3", data))
 
 
+iter = Iterator("dataset.csv")
+print("\n")
+print("="*5)
+for i in range(1,10):
+    print(next(iter))
